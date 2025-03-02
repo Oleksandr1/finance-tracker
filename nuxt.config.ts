@@ -2,8 +2,17 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
-  modules: ["@nuxt/ui","@nuxtjs/supabase"],
-  supabase:{
-    redirect: true
-  }
+  modules: ["@nuxt/ui", "@nuxtjs/supabase", "@nuxt/eslint"],
+  supabase: {
+    redirect: true,
+  },
+  // eslint: {
+  //   config: {
+  //     stylistic: {
+  //       indent: 'tab',
+  //       semi: true,
+  //       // ...
+  //     }
+  //   }
+  // }
 });

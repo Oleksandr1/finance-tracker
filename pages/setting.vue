@@ -9,19 +9,19 @@
 <script lang="ts" setup>
 const links = [
   {
-    label: 'Profile',
-    icon: 'i-heroicons-user-circle',
-    to: '/setting/profile'
+    label: "Profile",
+    icon: "i-heroicons-user-circle",
+    to: "/setting/profile",
   },
   {
-    label: 'Avatar',
-    icon: 'i-heroicons-user-circle',
-    to: '/setting/avatar'
+    label: "Avatar",
+    icon: "i-heroicons-user-circle",
+    to: "/setting/avatar",
   },
   {
-    label: 'Settings',
-    icon: 'i-heroicons-cog-8-tooth',
-    to: '/setting/setting'
-  }
-]
+    label: "Settings",
+    icon: "i-heroicons-cog-8-tooth",
+    to: "/setting/setting",
+  },
+];
 </script>

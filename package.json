@@ -8,20 +8,29 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "seed": "npx tsx seed.ts"
+    "seed": "npx tsx seed.ts",
+    "lint": "eslint .",
+    "lint:prettier": "prettier . --check",
+    "lint:fix": "eslint . --fix && prettier --write --list-different ."
   },
   "dependencies": {
+    "@nuxt/eslint": "^1.1.0",
     "@nuxt/ui": "^2.21.0",
     "@nuxtjs/supabase": "^1.4.6",
+    "eslint-config-prettier": "^10.0.2",
+    "eslint-plugin-prettier": "^5.2.3",
     "nuxt": "^3.15.4",
+    "prettier": "^3.5.2",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
     "@faker-js/faker": "^9.4.0",
+    "@nuxt/eslint-config": "^1.1.0",
     "@types/faker": "^6.6.11",
     "@types/node": "^22.13.1",
     "date-fns": "^4.1.0",
+    "eslint": "^9.21.0",
     "zod": "^3.24.1"
   }
 }
