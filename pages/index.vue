@@ -15,6 +15,7 @@
         :amount="incomeTotal"
         :last-amount="previousIncomeCount"
         :loading="pending"
+        key="Income"
       />
       <AppTrend
         color="red"
@@ -22,6 +23,7 @@
         :amount="expenseTotal"
         :last-amount="previousExpenseCount"
         :loading="pending"
+        key="Expense"
       />
 <!--      <AppTrend-->
 <!--        color="green"-->
