@@ -5,5 +5,5 @@
   </UCard>
 </template>
 <script lang="ts" setup>
-useRedirectIfAuthenticated();
+useRedirectIfAuthenticated('/')
 </script>
