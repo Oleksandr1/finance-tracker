@@ -41,7 +41,7 @@ const pending = ref(false);
 const { toastError } = useAppToast();
 const supabase = useSupabaseClient();
 
-const redirectUrl = useRuntimeConfig().public?.baseUrl
+const redirectUrl = useRuntimeConfig().public?.baseUrl;
 useRedirectIfAuthenticated();
 const handleLogin = async () => {
   pending.value = true;

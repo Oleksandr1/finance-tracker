@@ -23,8 +23,20 @@
         :last-amount="previousExpenseCount"
         :loading="pending"
       />
-      <!--      <Trend color="green" title="Investments" :amount="4000" :last-amount="3000" :loading="pending" />-->
-      <!--      <Trend color="red" title="Saving" :amount="4000" :last-amount="4100" :loading="pending" />-->
+<!--      <AppTrend-->
+<!--        color="green"-->
+<!--        title="Investments"-->
+<!--        :amount="4000"-->
+<!--        :last-amount="3000"-->
+<!--        :loading="pending"-->
+<!--      />-->
+<!--      <AppTrend-->
+<!--        color="red"-->
+<!--        title="Saving"-->
+<!--        :amount="4000"-->
+<!--        :last-amount="4100"-->
+<!--        :loading="pending"-->
+<!--      />-->
     </section>
     <section class="flex justify-between mb-10">
       <div>
@@ -67,7 +79,7 @@
 </template>
 <script lang="ts" setup>
 import { transactionViewOptions } from "~/constants";
-import type { Transaction, TransactionViewOptionsType } from "~/types";
+import type { TransactionViewOptionsType } from "~/types";
 import { useSelectedTimePeriod } from "~/composables/useSelectedTimePeriod";
 
 const user = useSupabaseUser();
